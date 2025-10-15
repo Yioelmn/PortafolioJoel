@@ -12,9 +12,8 @@ function Footer() {
             <p>© 2025 Todos los derechos reservados.</p>
           </Col>
           <Col md={6} className="text-md-end">
-            <p className='footer-link'>
-                Hecho por Yioelmn <br />
-                <a href="https://github.com/Yioelmn">presiona aqui para ir a mi perfil en GitHub</a>
+            <p>
+                Hecho por Yioelmn
             </p>
           </Col>
         </Row>

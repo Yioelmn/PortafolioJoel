@@ -7,8 +7,8 @@ function ProjectCard({ project }) {
   const navigate = useNavigate();
 
   return (
-    <Card style={{ width: '18rem' }} className="m-2">
-      <Image src={project.image} alt={project.name} className="card-img-top" />
+    <Card className="CardProject m-2">
+      <Image src={project.image} alt={project.name} className="card-image" />
       <Card.Body>
         <Text variant="h5">{project.name}</Text>
         <Text variant="p">{project.description}</Text>
@@ -21,3 +21,4 @@ function ProjectCard({ project }) {
 }
 
 export default ProjectCard;
+

@@ -6,22 +6,23 @@ import Project from "./pages/Project";
 import ProjectDetail from "./pages/ProjectDetail";
 import Contact from "./pages/Contact";
 import News from "./pages/News";
+import "./styles/global.css"
 
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Project />} />
-        <Route path="/projects/:id" element={<ProjectDetail />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/news" element={<News />} />
-      </Routes>
-      <Footer />
-    </>
-  );
-}
+      <div className="AppStyle">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Project />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/news" element={<News />} />
+        </Routes>
+        <Footer />
+      </div>
+    );
+  }
 
 export default App;

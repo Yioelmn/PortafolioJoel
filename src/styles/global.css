@@ -1,6 +1,67 @@
-.container {
-  padding-top: 2rem;
-  padding-bottom: 2rem; 
+.AppStyle {
+  background-color: #480364ab;
+  min-height: 100vh;
+}
+
+.CardProject {
+  width: 18rem;           
+  margin: 1rem;           
+  border-radius: 1rem; 
+  background-color: #300101e5; 
+  
+}
+
+.CardProject .card-image {
+  max-width: 100%;       
+  max-height: 200px;     
+  object-fit: cover;     
+  display: block;
+  margin: 0 auto;
+}
+
+.CardProject:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 10px 20px #300101e5;
+}
+
+.CardProject .card-body {
+  text-align: center;  
+  color: antiquewhite;
+}
+
+.CardProject Button {
+  margin-top: 0.5rem;
+}
+
+.CardDetail {
+  background-color: #300101e5;  
+  color: antiquewhite;
+  border: 1px solid #1f0101; 
+}
+
+.project-image {
+  max-width: 500px;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.mis-redes-link {
+  margin-top: 1rem; 
+  display: flex; 
+  justify-content: center;
+  gap: 1rem; 
+  font-size: 2rem;
+}
+
+.mis-redes-link a {
+  color: inherit; 
+  transition: color 0.3s;
+}
+
+.mis-redes-link a:hover {
+  color: #300101e5; 
 }
 
 .project-image {

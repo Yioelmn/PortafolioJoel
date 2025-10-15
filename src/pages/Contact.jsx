@@ -45,9 +45,21 @@ function Contact() {
 
   
   const handleSubmit = () => {
+
     const message = `Nombre: ${formData.nombre}\nCorreo: ${formData.correo}\nMensaje: ${formData.mensaje}`;
     alert(message);
-  };
+
+    if (!formData.nombre.trim() || !formData.correo.trim() || !formData.mensaje.trim()) {
+      alert("Se requiere llenar los campos antes de enviar");
+      return;
+    }
+
+
+    if (!formData.correo.includes("@")) {
+      alert("Por favor ingresa un correo válido con @.");
+      return;
+    }
+};
 
   
   const handleClear = () => {
@@ -57,7 +69,7 @@ function Contact() {
   return (
     <Container className="my-5">
       <Text variant="h1">Contacto</Text>
-      <Text variant="p">Llena el formulario para poder contactarte</Text>
+      <Text variant="p">Llena el formulario para poder contactarme contigo</Text>
 
       <DynamicForm inputs={formInputs} />
 

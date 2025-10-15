@@ -1,4 +1,5 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import Image from "../components/atoms/Image";
 import Text from "../components/atoms/Text";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +19,19 @@ function Home() {
           <Text variant="p">
             Desarrollador Frontend novato adentrandose al mundo de la programación,
             Este portafolio muestra un resumen de algunos de mis proyectos que eh desarrollado a lo largo de mis estudios
-            .
+            . <br /> Te invito a seguirme en mis redes sociales para que puedas estar al tanto de mis avances: <br />
+            <div className="mis-redes-link">
+              <a href="https://github.com/Yioelmn" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+              <a href="https://www.linkedin.com/in/Yioelmn/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
+              </a>
+              <a href="https://www.instagram.com/Yioelmn/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
+</div>
+
           </Text>
 
           <div className="mt-4">
@@ -40,7 +53,7 @@ function Home() {
         <Col>
           <Text variant="h2">Tecnologías que uso</Text>
           <p>
-            React-JavaScript-HTML-CSS-Bootstrap-Node.js-Git-Figma
+            React-JavaScript-HTML-CSS-Bootstrap-Node.js-Git
           </p>
         </Col>
       </Row>

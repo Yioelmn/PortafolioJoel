@@ -12,24 +12,25 @@ function ProjectDetail() {
   const navigate = useNavigate();
   const project = projects.find((p) => p.id === parseInt(id));
 
-  if (!project) {
-    return (
-      <Container className="my-5">
-        <h1>Proyecto no encontrado</h1>
-      </Container>
-    );
-  }
-
   return (
     <Container className="my-5">
       <Button variant="primary" onClick={() => navigate('/projects')}>
         Volver
       </Button>
-      <Card className="mt-3">
+      <Card className="mt-3 CardDetail">
         <Image src={project.image} alt={project.name} className="project-image" />
         <Card.Body>
           <Text variant="h2">{project.name}</Text>
           <Text variant="p">{project.longDescription}</Text>
+          <Button
+            variant="dark"
+            className="mt-3"
+            href={project.github} 
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver en GitHub
+          </Button>
         </Card.Body>
       </Card>
     </Container>
